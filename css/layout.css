@@ -1,0 +1,30 @@
+/* ....................... Container ....................... */
+.container{
+    width: 120rem;
+    background-color: var(--C4);
+    margin: auto;
+    height: 47.5rem;
+}
+/* ....................... Header ....................... */
+.header{
+    display: flex;
+    background-color: var(--C4);
+    justify-content: space-between;
+    align-items: center;
+    color:var(--C6);
+    font-size:50px;
+    height:146px;
+    margin-top: 10px;
+}
+.header p{
+    font-size:20px;
+    }
+/* ....................... Footer ....................... */
+.footer{
+    color: var(--C6);
+    margin-top: 10px;
+    height:60px;
+    width: 100%;
+    font-size:15px;
+    background-color: var(--C4);
+}

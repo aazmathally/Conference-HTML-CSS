@@ -1,0 +1,207 @@
+    /* ....................... Content ....................... */
+    #content{
+      background: transparent url(../img/transparent.png) repeat;
+      color:var(--C0);
+      width:72%;
+      float:left;
+      }
+    /* ....................... Sidebar ....................... */
+    #sidebar{
+      background:var(--C0);
+      width:26%;
+      float:right;
+      margin-bottom:10px; 
+      }
+      /* ....................... Heading 2 ....................... */
+    h2{
+      color: var(--C6);
+      background:var(--C5);
+      padding:5px;
+      margin-top:0px;
+    }
+    /* ....................... Line-Spacing ....................... */   
+    .spacing{
+     padding:50px;
+    }
+    /* ....................... Box ....................... */
+    .box {
+      float:left;
+      width:275px;
+      padding:10px;
+      }
+    .boxcap{
+      background:var(--C0);
+      color:var(--C6);
+      height:65px;
+      text-align:center;
+      font-size:40px;
+      font-weight:bold;
+    }
+    /* ....................... Index Content ....................... */
+    .index
+    {
+      width: 40%;
+      float: left;
+      margin-left:100px;
+      padding-top:8px;
+      padding-bottom:8px;
+    }
+    /* ....................... Banner ....................... */
+    .banner{
+      height:200px;
+      margin-top: 37px;
+      margin-bottom: 5px;
+    }
+    /* ....................... Clears ....................... */
+    .clear
+    {
+      clear: both;
+    } 
+    /* ....................... Table ....................... */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      padding: 10px;
+    }
+    td{
+      border: 1px solid var(--C0);
+      font-size: larger;
+      text-align: left;
+      padding: 10px;
+    }
+    th{
+      font-size: large;
+      text-align: left;
+      padding: 20px;
+    }
+/* ....................... Search ....................... */
+    .search {
+      display: flex;
+      justify-content: right;
+    }
+    .search__input {
+      border: 1rem;
+      outline: 1px solid var(--C4);
+      padding: 1rem;
+      border-radius: 20px;
+      width:20%;
+      transition: all .4s;
+      margin-right: 5rem;
+    }
+    .search__input:focus {
+      width:25%;
+      outline: 1px solid var(--C4);
+    }
+/* ....................... Nav ....................... */
+    #nav  li {    
+     display:inline;
+            }
+    #nav  li a{
+      color:var(--C2);
+      font-weight: bold;
+      padding: 40px;
+      text-transform: uppercase;   
+            }
+    #nav a:hover { 
+      color: var(--C2);
+    }
+    #nav ul
+    {
+      padding:50px 0px 20px 0px;
+      background-color: var(--C6);
+      font-size: 16px;
+      margin-bottom: -65px;
+    }
+  .side-nav__item{
+    position: relative;
+  }
+  .side-nav__item::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: var(--C4);
+    height: 200%;
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.5s 0.2s;
+  }
+  .side-nav__item:hover::before{
+    transform: scaleY(1);
+    width: 100%;
+  }
+  .side-nav__link{
+    text-decoration: none;
+    position: relative;
+  }  
+/* ....................... Contact Us Form ....................... */
+  input[id="fname"], input[id="lname"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: var(--C1);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: var(--C5);
+  }
+/* ....................... sticky social media icon bar ....................... */
+  .icon-bar {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      transition: all 0.6s ease;
+    }
+    .icon-bar a:hover {
+      background-color: var(--C6);
+    }
+    .facebook {
+      background: #3B5998;
+    }
+    .twitter {
+      background: #55ACEE;
+    }
+    .google {
+      background: #dd4b39;
+    }
+    .linkedin {
+      background: #006492;
+    }
+    .youtube {
+      background: #ff0606;
+    }
+/* ....................... Text flowing from right to left ....................... */
+ .wrapper {
+      margin: auto;
+      overflow-x: hidden;
+    }
+    .target {
+      font-weight: bold;
+      color: var(--C2);
+      animation-name: rightToLeft;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      /* animation: rightToLeft 4.5s linear infinite; */
+    }
+    @keyframes rightToLeft {
+      0% {
+        transform: translateX(500px);
+      }
+      100% {
+        transform: translateX(-900px);
+      }
+    }
