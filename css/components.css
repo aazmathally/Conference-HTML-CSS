@@ -29,9 +29,8 @@ h2 {
 }
 /* ....................... Box ....................... */
 .box {
-  float: left;
-  width: 275px;
-  padding: 10px;
+  display: flex;
+  align-items: center;
 }
 .boxcap {
   background: var(--C0);
