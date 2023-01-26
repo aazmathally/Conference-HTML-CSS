@@ -109,10 +109,10 @@ th {
   color: var(--C2);
 }
 #nav ul {
-  padding: 50px 0px 20px 0px;
+  padding: 30px 0px 20px 0px;
   background-color: var(--C6);
   font-size: 16px;
-  margin-bottom: -65px;
+  margin-bottom: -55px;
 }
 .side-nav__item {
   position: relative;
@@ -122,9 +122,9 @@ th {
   position: absolute;
   width: 1px;
   background-color: var(--C4);
-  height: 200%;
+  height: 120%;
   transform: scaleY(0);
-  transition: transform 0.2s, width 0.5s 0.2s;
+  transition: transform 0.5s, width 0.3s 0.2s;
 }
 .side-nav__item:hover::before {
   transform: scaleY(1);
