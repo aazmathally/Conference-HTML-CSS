@@ -21,10 +21,11 @@
 }
 /* ....................... Footer ....................... */
 .footer {
+  display: flex;
   color: var(--C6);
-  text-align: center;
+  justify-content: center;
   margin-top: 10px;
-  height: 60px;
+  height: 20px;
   width: 100%;
   font-size: 15px;
   background-color: var(--C4);
