@@ -30,7 +30,7 @@ h2 {
 /* ....................... Box ....................... */
 .box {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 .boxcap {
   background: var(--C0);
